@@ -1,7 +1,10 @@
 <template>
     <header class="header">
-        <div class="left-area">left</div>
-        <div class="right-area">right</div>
+        <ul>
+            <li><router-link to="/">Top</router-link></li>
+            <li><router-link to="/page1">Page1</router-link></li>
+            <li><router-link to="/page2">Page2</router-link></li>
+        </ul>
     </header>
 </template>
 

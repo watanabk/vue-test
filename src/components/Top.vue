@@ -1,14 +1,17 @@
 <template>
     <div>
         <p>
-            ここはページ2です。
+            トップページ！
         </p>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'page2'
+        name: 'Top'  , 
+        title () {
+            return 'top'
+        }
     }
 </script>
 
