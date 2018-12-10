@@ -8,6 +8,7 @@ import page2 from '../components/page2'
 Vue.use(Router)
 
 export default new Router({
+    mode: 'history', 
     routes: [
         {path: '/', component: Top}, 
         {path: '/page1', component: page1},
