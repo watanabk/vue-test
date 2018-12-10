@@ -2,9 +2,11 @@
     <header class="header">
         <nav>
             <ul>
-                <li><router-link to="/">Top</router-link></li>
-                <li><router-link to="/page1">Page1</router-link></li>
-                <li><router-link to="/page2">Page2</router-link></li>
+                <li v-for="(item, index) in items" :key=index>
+                    <router-link v-bind:to=item.path>
+                        {{item.title}}
+                    </router-link>
+                </li>
             </ul>
         </nav>
     </header>
@@ -12,9 +14,28 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header' ,
+    data () {
+        return {
+            items: [
+                {title: 'top', path: '/'}, 
+                {title: 'page1', path: '/page1'}, 
+                {title: 'page2', path: '/page2'}, 
+                {title: 'page3', path: '/page3'}
+            ]
+        }
+    }
 };
 </script>
 
 <style scoped lang="scss">
+    .header {
+        top: 0;
+        right: 0;
+        margin-right: auto;
+        position: absolute;
+    }
+    li:hover {
+        opacity: 0.4;
+    }
 </style>
