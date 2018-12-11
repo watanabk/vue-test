@@ -1,8 +1,13 @@
 <template>
-    <div>
+    <div class="main-container">
         <p>
             トップページ！
         </p>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
     </div>
 </template>
 
@@ -15,5 +20,8 @@
     }
 </script>
 
-<style>
+<style scoped lang="scss">
+    .main-container {
+        height: 100%;
+    }
 </style>
