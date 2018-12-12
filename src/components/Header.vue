@@ -3,9 +3,9 @@
         <div class="header-inner">
             <router-link class="logo" to="/">aaaa</router-link>
             <ul class="links">
-                <li v-for="(item, index) in items" :key=index>
-                    <router-link v-bind:to=item.path>
-                        {{item.title}}
+                <li v-for="(header, index) in headers" :key=index>
+                    <router-link v-bind:to=header.path>
+                        {{header.title}}
                     </router-link>
                 </li>
             </ul>
@@ -14,15 +14,12 @@
 </template>
 
 <script>
+import headers from '../json/headers.json'
 export default {
     name: 'Header',
     data () {
         return {
-            items: [
-                {title: 'page1', path: '/page1'}, 
-                {title: 'page2', path: '/page2'}, 
-                {title: 'page3', path: '/page3'}
-            ]
+            headers: headers
         }
     }
 };
@@ -30,24 +27,43 @@ export default {
 
 <style scoped lang="scss">
     .header {
+        height: 32px;
         padding-top: 16px;
         padding-bottom: 16px;
         -webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
         box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
         position: relative;
-    }
-    .header-inner {
-        position: relative;
-        text-align: left;
-        .logo {
-            margin-left: 10px;
-            float: left;
-        }
-        .links {
-            margin-left: 95px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            display: block;
+        .header-inner {
+            position: relative;
+            text-align: left;
+            .logo {
+                margin-left: 10px;
+                float: left;
+                color: #006400;
+                text-decoration: none;
+                :visited {
+                    color: #006400;
+                }
+            }
+            .links {
+                margin-left: 95px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                list-style: none;
+                font-weight: bold;
+                display: block;
+                li {
+                    float: left;
+                    margin: 0 10px;
+                    a{
+                        color: #006400;
+                        text-decoration: none;
+                        :visited {
+                            color: #006400;
+                        }
+                    }
+                }
+            }
         }
     }
     li:hover {

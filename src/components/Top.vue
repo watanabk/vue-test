@@ -1,8 +1,46 @@
 <template>
     <div class="main-container">
-        <p>
-            トップページ！
-        </p>
+        <p>トップページへようこそ！</p>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
+        <div>aaa</div>
         <div>aaa</div>
         <div>aaa</div>
         <div>aaa</div>
@@ -21,7 +59,4 @@
 </script>
 
 <style scoped lang="scss">
-    .main-container {
-        height: 100%;
-    }
 </style>
