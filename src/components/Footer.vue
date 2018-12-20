@@ -3,7 +3,7 @@
         <nav class="footer-inner">
             <div class="category">
                 <ul class="items">
-                    <li><p>Copyright © 2000 XXXX All Rights Reserved.</p></li>
+                    <li><p>Copyright © XXXX All Rights Reserved.</p></li>
                 </ul>
             </div>
         </nav>
@@ -18,11 +18,14 @@ export default {
 
 <style scoped lang="scss">
     .footer {
-        background-color: #006400;
-        color: #FFFFFF;
+        /*background-color: #006400;*/
+        color: #006400;
         width: 100%;
         height: 32px;
+        position: relative;
         div.category {
+            position: absolute;
+            right: 0;
             ul.items {
                 list-style: none;
                 li {

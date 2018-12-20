@@ -1,5 +1,7 @@
 [
-    {"title": "page1", "path": "/page1"}, 
-    {"title": "page2", "path": "/page2"}, 
-    {"title": "page3", "path": "/page3"}
+    {"title": "Profile", "path": "/page1"}, 
+    {"title": "Works", "path": "/Works"}, 
+    {"title": "Lesson", "path": "/page3"}, 
+    {"title": "Cortiare", "path": "/page3"}, 
+    {"title": "Contacts", "path": "/page3"}
 ]

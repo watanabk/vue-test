@@ -1,51 +1,7 @@
 <template>
     <div class="main-container">
+        <img src="../assets/top_banner.jpg" />
         <p>トップページへようこそ！</p>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
     </div>
 </template>
 
@@ -59,4 +15,10 @@
 </script>
 
 <style scoped lang="scss">
+.main-container {
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
 </style>

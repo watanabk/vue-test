@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="header-inner">
-            <router-link class="logo" to="/">aaaa</router-link>
+            <router-link class="logo" to="/">XXXXXX XXXXXXXX Officail Web Site</router-link>
             <ul class="links">
                 <li v-for="(header, index) in headers" :key=index>
                     <router-link v-bind:to=header.path>
@@ -30,12 +30,12 @@ export default {
         height: 32px;
         padding-top: 16px;
         padding-bottom: 16px;
-        -webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
-        box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
+        /*-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
+        box-shadow: 0 0 3px 3px rgba(0,0,0,.08);*/
         position: relative;
         .header-inner {
             position: relative;
-            text-align: left;
+            text-align: right;
             .logo {
                 margin-left: 10px;
                 float: left;
@@ -46,6 +46,8 @@ export default {
                 }
             }
             .links {
+                position: absolute;
+                right: 0;
                 margin-left: 95px;
                 margin-top: 0px;
                 margin-bottom: 0px;
