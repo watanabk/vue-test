@@ -8,7 +8,7 @@
 <script>
 import articles from '../json/articles.json'
     export default {
-        name: 'page1', 
+        name: 'Profile', 
         data () {
             return {
                 items: articles

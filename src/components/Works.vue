@@ -3,10 +3,11 @@
         <h1>Works!</h1>
         <div class="articles">
             <article v-for="(item, index) in items" :key=index>
-                <h2 class="title">{{item.date}} {{item.title}}[{{index}}]</h2>
-                <pre class="description">{{item.description}}</pre>
-                <p class="location">{{item.location}}</p>
-                <a class="more" href="#">more</a>
+                <div class="header">
+                    <p class="date">{{item.date}}</p>
+                    <h2 class="title">{{item.title}}[{{index}}]</h2>
+                </div>
+                <div class="description" v-html="item.description"></div>
             </article>
         </div>
     </div>
@@ -29,32 +30,31 @@ import articles from '../json/articles.json'
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
         article {
-            margin: 10px;
-            padding: 10px;
-            width: 45%;
+            background: #fff;
+            border-radius: 0px;
+            padding: 0;
+            box-shadow: initial;
+            margin-bottom: 30px;
+            width: 100%;
             position: relative;
-            .title {
-                /*border-radius: 5px;*/
-                /*background-color: #9acd32;*/
-                text-align: left;
-                padding-left: 10px;
-            }
-            .location {
-                text-align: left;
-                padding-left: 20px;
-                margin: 5px;
+            .header {
+                background-color: #9acd32;
+                color: #FFFFFF;
+                padding: 10px;
+                .date {
+                    text-align: left;
+                    margin: 0;
+                }
+                .title {
+                    text-align: left;
+                    margin: 0;
+                }
             }
             .description {
                 text-align: left;
                 padding-left: 20px;
                 margin: 5px;
-            }
-            .more {
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
             }
         }
     }
@@ -63,7 +63,14 @@ import articles from '../json/articles.json'
     @media (min-width: 768px) {
         .articles {
             article {
+                box-shadow: initial;
+                margin-bottom: 30px;
                 width: 100%;
+                .header{
+                    .date {
+                        font-size: 0.5vh;
+                    }
+                }
             }
         }
     }
@@ -71,7 +78,14 @@ import articles from '../json/articles.json'
     @media (min-width: 992px) {
         .articles {
             article {
-                width: 33%;
+                box-shadow: 0 2px 5px #ccc;
+                margin: 10px;
+                width: 45%;
+                .header{
+                    .date {
+                        font-size: 0.7vh;
+                    }
+                }
             }
         }
     }
@@ -79,7 +93,14 @@ import articles from '../json/articles.json'
     @media (min-width: 1200px) {
         .articles {
             article {
+                box-shadow: 0 2px 5px #ccc;
+                margin: 10px;
                 width: 25%;
+                .header{
+                    .date {
+                        font-size: 1.0vh;
+                    }
+                }
             }
         }
     }

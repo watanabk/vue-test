@@ -18,14 +18,13 @@ export default {
 
 <style scoped lang="scss">
     .footer {
-        /*background-color: #006400;*/
         color: #006400;
         width: 100%;
         height: 32px;
         position: relative;
         div.category {
             position: absolute;
-            right: 0;
+            right: 5px;
             ul.items {
                 list-style: none;
                 li {

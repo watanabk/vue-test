@@ -3,7 +3,7 @@
         <div class="header-inner">
             <router-link class="logo" to="/">XXXXXX XXXXXXXX Officail Web Site</router-link>
             <ul class="links">
-                <li v-for="(header, index) in headers" :key=index>
+                <li class="link" v-for="(header, index) in headers" :key=index>
                     <router-link v-bind:to=header.path>
                         {{header.title}}
                     </router-link>
@@ -30,15 +30,10 @@ export default {
         height: 32px;
         padding-top: 16px;
         padding-bottom: 16px;
-        /*-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,.08);
-        box-shadow: 0 0 3px 3px rgba(0,0,0,.08);*/
         position: relative;
         .header-inner {
-            position: relative;
-            text-align: right;
             .logo {
                 margin-left: 10px;
-                float: left;
                 color: #006400;
                 text-decoration: none;
                 :visited {
@@ -46,17 +41,11 @@ export default {
                 }
             }
             .links {
-                position: absolute;
-                right: 0;
-                margin-left: 95px;
-                margin-top: 0px;
-                margin-bottom: 0px;
                 list-style: none;
                 font-weight: bold;
                 display: block;
                 li {
                     float: left;
-                    margin: 0 10px;
                     a{
                         color: #006400;
                         text-decoration: none;
@@ -73,11 +62,69 @@ export default {
     }
     /* for smartphone */
     @media (min-width: 768px) {
+        .header {
+            width: 100%;
+            display: table;
+            .header-inner {
+                width: 100%;
+                .logo {
+                    font-size: 1.2vh;
+                    clear: both;
+                }                
+                .links {
+                    padding: 0;
+                    font-size: 1.8vh;
+                    .link{
+                        width: 20%;
+                    }
+                }
+            }
+        }
     }
     /* for tablet */
     @media (min-width: 992px) {
+        .header {
+            .header-inner {
+                .logo {
+                    font-size: 1.5vh;
+                    float: left;
+                }
+                .links {
+                    position: absolute;
+                    right: 0;
+                    margin-left: 95px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    .link{
+                        font-size: 1.5vh;
+                        width: initial;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
     }
     /* for PC */
     @media (min-width: 1200px) {
+        .header {
+            .header-inner {
+                .logo {
+                    font-size: 3vh;
+                    float: left;
+                }
+                .links {
+                    position: absolute;
+                    right: 0;
+                    margin-left: 95px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    .link{
+                        font-size: 3vh;
+                        width: initial;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
     }
 </style>
