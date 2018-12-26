@@ -2,6 +2,7 @@
     <div>
         <h1>何かの情報をここに列挙します！
         </h1>
+        {{items[id].title}}
     </div>
 </template>
 
@@ -11,7 +12,8 @@ import articles from '../json/articles.json'
         name: 'page1', 
         data () {
             return {
-                items: articles
+                items: articles, 
+                id: this.$route.query.id
             }
         }
     }

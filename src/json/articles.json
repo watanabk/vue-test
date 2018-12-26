@@ -1,52 +1,65 @@
 [
     {
-        "date": "2018-12-17", 
+        "date": "2019-12-01", 
         "title": "●●●●●●を開催します！", 
-        "description": "記事に関する説明をここに書きます。<BR />改行は&lt;BR /&gt;すればOK！<BR />改行<BR /><img src='../../assets/top_banner.jpg' /><a href='#'>test link</a>"
+        "description": "記事に関する説明をここに書きます。<BR />改行は&lt;BR /&gt;すればOK！<BR />改行<BR /><img src='src/assets/top_banner.jpg' /><BR /><a href='https://www.google.com'>test link</a>",
+        "image_src": "top_banner.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-11-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image001.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-10-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image002.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-09-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image001.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-08-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image002.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-07-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image001.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-06-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image002.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-05-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image001.jpg", 
+        "url": "#"
     }, 
     {
-        "date": "2019-01-17", 
+        "date": "2019-04-01", 
         "title": "●●に出演します！", 
-        "description": "説明"
-    }, 
-    {
-        "date": "2019-01-17", 
-        "title": "●●に出演します！", 
-        "description": "説明"
+        "description": "説明",
+        "image_src": "image002.jpg", 
+        "url": "#"
     }
 ]

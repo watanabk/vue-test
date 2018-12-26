@@ -53,6 +53,9 @@ export default {
                             color: #006400;
                         }
                     }
+                    a.router-link-active.router-link-exact-active {
+                        border-bottom: 2px solid #006400;
+                    }
                 }
             }
         }

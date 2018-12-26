@@ -2,12 +2,13 @@
     <div class="works">
         <h1>Works!</h1>
         <div class="articles">
-            <article v-for="(item, index) in items" :key=index>
+            <article class="article" v-for="(item, index) in items" :key=index>
                 <div class="header">
-                    <p class="date">{{item.date}}</p>
+                    <img class="image" v-bind:src="'../src/assets/' + item.image_src" />
                     <h2 class="title">{{item.title}}[{{index}}]</h2>
                 </div>
-                <div class="description" v-html="item.description"></div>
+                <p class="date">{{item.date}}</p>
+                <router-link class="more" v-bind:to="{name: 'article', params: {id: index}}">more</router-link>
             </article>
         </div>
     </div>
@@ -38,23 +39,42 @@ import articles from '../json/articles.json'
             margin-bottom: 30px;
             width: 100%;
             position: relative;
-            .header {
-                background-color: #9acd32;
-                color: #FFFFFF;
-                padding: 10px;
-                .date {
-                    text-align: left;
-                    margin: 0;
-                }
+            .header{
                 .title {
-                    text-align: left;
-                    margin: 0;
+                    position: absolute;
+                    width: 80%;
+                    left: 50%;
+                    top: 50%;
+                    -ms-transform: translate(-50%,-50%);
+                    -webkit-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                    margin:0;
+                    padding:0;
+                    color: #FFFFFF;
+                    font-size: 2vh;
+                }
+                .image {
+                    width: 100%;
+                    height: 200px;
+                    filter: brightness(70%);
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    object-fit: cover;
                 }
             }
             .description {
                 text-align: left;
                 padding-left: 20px;
                 margin: 5px;
+            }
+            .more {
+                position: absolute;
+                right: 5px;
+                bottom: 5px;
+                padding: 3px;
+                background-color: #9acd32;
+                color: #FFFFFF;
+                text-decoration: none;
             }
         }
     }
@@ -65,11 +85,11 @@ import articles from '../json/articles.json'
             article {
                 box-shadow: initial;
                 margin-bottom: 30px;
-                width: 100%;
-                .header{
-                    .date {
-                        font-size: 0.5vh;
-                    }
+                width: 100%;/* 30% でもいいかも？ */
+                margin: 5px;
+                .date {
+                    font-size: 0.5vh;
+                    padding-bottom: 10px;
                 }
             }
         }
@@ -81,10 +101,9 @@ import articles from '../json/articles.json'
                 box-shadow: 0 2px 5px #ccc;
                 margin: 10px;
                 width: 45%;
-                .header{
-                    .date {
-                        font-size: 0.7vh;
-                    }
+                .date {
+                    font-size: 0.7vh;
+                    padding-bottom: 20px;
                 }
             }
         }
@@ -95,10 +114,14 @@ import articles from '../json/articles.json'
             article {
                 box-shadow: 0 2px 5px #ccc;
                 margin: 10px;
-                width: 25%;
-                .header{
-                    .date {
-                        font-size: 1.0vh;
+                width: 18%;
+                .date {
+                    font-size: 1.0vh;
+                    padding-bottom: 20px;
+                }
+                .more {
+                    :hover {
+                        opacity: 0.4;
                     }
                 }
             }
